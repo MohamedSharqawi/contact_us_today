@@ -4,6 +4,7 @@
 
 .successMsg {
     width: fit-content;
+    min-width: 275px;
     background-color: var(--gray-900);
     color: var(--white);
     position: absolute;
