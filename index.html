@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contact Form</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="shortcut icon" href="assets/images/favicon-32x32.png" type="image/x-icon">
+    </head>
+    <body>
+        <div class="successMsg">
+            <div class="successMsg__grp">
+                <img src="assets/images/icon-success-check.svg" alt="Success Form Check">
+                <h2 class="successMsg__title">Message Sent!</h2>
+            </div>
+            <p class="successMsg__desc">Thanks for completing the form. We'll be in touch soon!</p>
+        </div>
+
+        <form class="form">
+            <h1 class="form__title">Contact Us</h1>
+
+            <div class="form__group">
+                <div class="form__item">
+                    <label for="fname" class="form__label">First Name <span style="color: hsl(169, 82%, 27%);">*</span></label>
+                    <input type="text" class="form__input" id="fname">
+                    <p class="form__errorMsg"></p>
+                </div>
+                <div class="form__item">
+                    <label for="lname" class="form__label">Last Name <span style="color: hsl(169, 82%, 27%);">*</span></label>
+                    <input type="text" class="form__input" id="lname">
+                    <p class="form__errorMsg"></p>
+                </div>
+            </div>
+
+            <div class="form__item">
+                <label for="mail" class="form__label">Email Address <span style="color: hsl(169, 82%, 27%);">*</span></label>
+                <input type="text" class="form__input" id="mail">
+                <p class="form__errorMsg"></p>
+            </div>
+            
+            <div class="form__item">
+                <p class="form__label">Query Type <span style="color: hsl(169, 82%, 27%);">*</span></p>
+                <div class="form__group">
+                    <div class="form__radioItem" tabindex="0">
+                        <input type="radio" name="Type" class="form__inputRadio" id="general" hidden>
+                        <div class="form__divRadio"></div>
+                        <label for="general" class="form__radioLabel">General Enquiry</label>
+                    </div>
+                    <div class="form__radioItem" tabindex="0">
+                        <input type="radio" name="Type" class="form__inputRadio" id="support" hidden>
+                        <div class="form__divRadio"></div>
+                        <label for="support" class="form__radioLabel">Support Request</label>
+                    </div>
+                </div>
+                <p class="form__errorMsg"></p>
+            </div>
+            
+            <div class="form__item">
+                <label for="msg" class="form__label">Message <span style="color: hsl(169, 82%, 27%);">*</span></label>
+                <textarea name="Message" class="form__textarea" id="msg"></textarea>
+                <p class="form__errorMsg"></p>
+            </div>
+            
+            <div class="form__item">
+                <div class="form__check" tabindex="0">
+                    <input type="checkbox" class="form__inputCheckbox" id="consent" hidden>
+                    <div class="form__divCheckbox"></div>
+                    <label for="consent" class="form__checkLabel">I consent to being contacted by the team <span style="color: hsl(169, 82%, 27%);">*</span></label>
+                </div>
+                <p class="form__errorMsg"></p>
+            </div>
+
+            <button type="submit" class="form__submit">Submit</button>
+        </form>
+
+        <script src="main.js"></script>
+    </body>
+</html>
